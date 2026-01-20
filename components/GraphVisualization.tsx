@@ -41,7 +41,7 @@ const GraphVisualization: React.FC = () => {
   const [isConnected, setIsConnected] = useState(false);
   const [connectionError, setConnectionError] = useState<string | null>(null);
   
-  const [query, setQuery] = useState('MATCH path=(i:Intermediary)-[r:intermediary_of]-(e:Entity)\nRETURN path\nLIMIT 50');
+  const [query, setQuery] = useState('');
   const [graphData, setGraphData] = useState<GraphData>({ nodes: [], relationships: [] });
   const [isQueryRunning, setIsQueryRunning] = useState(false);
   const [queryError, setQueryError] = useState<string | null>(null);
