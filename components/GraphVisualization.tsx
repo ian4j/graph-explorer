@@ -35,9 +35,9 @@ const GraphVisualization: React.FC = () => {
   const zoomBehaviorRef = useRef<any>(null);
   const currentZoomRef = useRef(1);
   
-  const [dbUrl, setDbUrl] = useState('neo4j+s://469709dd.databases.neo4j.io');
-  const [dbUser, setDbUser] = useState('graphapp');
-  const [dbPassword, setDbPassword] = useState('graphapp1234');
+  const [dbUrl, setDbUrl] = useState('');
+  const [dbUser, setDbUser] = useState('');
+  const [dbPassword, setDbPassword] = useState('');
   const [isConnected, setIsConnected] = useState(false);
   const [connectionError, setConnectionError] = useState<string | null>(null);
   
